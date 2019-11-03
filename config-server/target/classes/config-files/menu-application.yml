@@ -1,0 +1,10 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: take-out-menu
+
+test:
+  aaa: ddd
+  bbb: ccc

@@ -1,0 +1,20 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/config-files
+  profiles:
+    active: native
+#        git:
+#          uri: https://github.com/qiaoxun/spring-cloud-config-rep/     # 配置git仓库的地址
+
+eureka:
+  client:
+    serviceUrl:
+      default-zone: http://localhost:9000/eureka/
