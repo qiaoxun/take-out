@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+    registerWithEureka: false
+    fetchRegistry: true
+
+spring:
+  cloud:
+    config:
+      name: menu2
+      # uri: http://localhost:8001/
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
